@@ -8,14 +8,7 @@
 nav{
     background: #636C79;
 }
-.navigations{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 4rem;
-    justify-content: flex-end;
-    padding: 2rem;
-}
+
 .classbtn{
     background-color: #636C79;
     color: #fff;
@@ -26,11 +19,6 @@ nav{
     border: none;
     border: 1px solid #77808dce ;
 }
-.hero-img{
-    width: 30rem;
-   height: 35rem;
-   
-}
 .navlinks{
     text-decoration: none;
     color: #fff;
@@ -38,6 +26,48 @@ nav{
 .navlinks:hover{
     color: #264348;
 }
+.navtext{
+    list-style: none;
+}
+.logo{
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 34px;
+    color: #fff;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.listitem{
+    display:flex;
+    gap: 4rem;
+    justify-content: space-between;    
+}
+@media only screen and (max-width: 980px) {
+   .listitem{
+    display: none;
+   }
+   .navigation{
+
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Hero Section */
 input{
     padding-left: 2rem;
@@ -67,13 +97,51 @@ input{
     color: #fff;
 }
 .heroSection{
-    background: #636C79;
-    display: flex; 
-    justify-content: center;
-    gap: 10rem;
-    padding: 2rem;
-            
+background: #636C79;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-bottom: 4rem;
+padding-left: 3rem;
+padding-right: 3rem;
+
+ 
 }
+.hero-img{
+  width: 80%;
+  height: 40%;
+   
+  }
+/* Responsive */
+@media only screen and (max-width: 980px) {
+.navigations{
+    display: none;
+}
+.heding-right{
+    font-size: 69px;
+}
+.Lets-btn{
+    display: none;
+}
+.left-text{
+    padding: 3rem;
+}
+.heding-right{
+    font-size: 2px;
+}
+.heroSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+    
 .heding-right{
     font-size: 3.4rem;
     color: #fff;
@@ -81,6 +149,7 @@ input{
 }
 .right-para{
     color: #fff;
+    font-size: 22px;
 }
 .form{
     display: flex;
@@ -117,19 +186,21 @@ input{
     color: #606771e9;
 }
 .littlepart{
+    padding: 2rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 /* mid Images */
 .img-mid{
-    padding: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 2rem;
 }
 .img-in-mid{
-    width: 70rem;
-    height: 40rem;
+   width: 80%;
 }
 /* Heding After image */
 .heading-we{
@@ -139,14 +210,44 @@ input{
     font-size: 2.4rem;
     font-weight: 500;
 }
-.employ-img1{
-    width:30%;
-    height: 20%;
+
+
+@media only screen and (max-width: 980px) {
+
+.employ-part-1,.employ-part-2{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
 }
-.employ-part-1{
+.employ-part-2{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
+}   
+.employ-part-3{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column-reverse;
+}  
+.employ-img1{
+    width: 100%;
+}   
+}
+
+
+.employ-part-1,.employ-part-2,.employ-part-3 {
+    padding: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 2rem;
+  
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -161,6 +262,7 @@ input{
     font-size: 1.2rem;
     color: #606771e9;
 }
+
 .btn-employ{
     border: none;
     background-color: #264348;
@@ -175,20 +277,35 @@ input{
 .btn-emps{
     padding-top: 2rem;
 }
-.employimg-2{
-    width:30%;
-    height: 20%; 
-}
+
 /* Team Part Started Here */
+@media only screen and (max-width: 980px) {
 .heading-team{
-padding-top: 4rem;   
-padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.heding-right{
+    font-size: 2.4rem;
+}
+.right-para{
+    font-size: 18px;
+}
+.left-text{
+    padding-bottom: .5rem;
+}
+}
+.heading-team{
 display: flex;
 align-items: center;
-justify-content: center;
-padding-left: 2rem;
-padding-right: 2rem;  
-gap: 25rem;
+justify-content: space-evenly;
+margin-left: 2rem;
+margin-right: 2rem;
+margin-bottom: 3rem;
+margin-top: 3rem;
+
 }
 .headingg-1{
     font-size: 2.4rem;
@@ -206,9 +323,12 @@ gap: 25rem;
 .team-member{
     display: flex;
     align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 1rem;
+    flex-wrap: wrap;
     justify-content: space-around;
+}
+.member-1{
+margin-bottom: 2rem;
 }
 .name-1{
     font-weight: 500;
@@ -231,25 +351,23 @@ gap: 25rem;
     cursor: pointer;
 }
 .foterpart{
-    background-color: #264348;
-   padding-right: 8rem;
-   padding-left: 8rem;
-   padding-top: 4rem;
-   padding-bottom: 6rem;    
+   background-color: #264348;
+  padding: 2rem;  
 }
 .upperpart{
     display: flex;  
     align-items: center;
-    justify-content: space-between;
    
-    margin-bottom: 4rem;
+    margin-bottom: 10px;
+ 
+ 
 }
 .flogo{
     color: #fff;
     font-weight: 500;
 }
 .icons{
-    gap: 2rem;
+  
     color: #fff;
     font-size: 1.4rem;
     background-color: #1e3438;
@@ -275,7 +393,11 @@ gap: 25rem;
     display: flex; 
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   
+}
+.listfoter{
+    margin-top: 2rem;
 }
 .list-text{
     list-style: none;
@@ -283,5 +405,10 @@ gap: 25rem;
 }
 .border{
     border-top: 1px solid #fff;
-    margin-bottom: 4rem;
+   
 }
+
+
+
+
+/* Responsive works */
